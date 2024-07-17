@@ -1,6 +1,6 @@
 
 
-# code source frontend et backend de bozahouse - application de gestion des offres d'emploi
+# code source frontend et backend de booking - application de reservation (HOTEL)
 
 ## Docker Compose command for run this application in container
 
@@ -12,12 +12,12 @@ docker compose up -d
 
 ### build backend image
 ```bash
-docker build -t bozahouse-backend:1.0.0 .
+docker build -t booking-backend:1.0.0 .
 ```
 
 ### build frontend image
 ```bash
-docker build -t bozahouse-frontend:1.0.0 .
+docker build -t booking-frontend:1.0.0 .
 ```
 
 ### delete image
@@ -27,12 +27,12 @@ docker rmi image_id
 
 ### run backend image
 ```bash
-docker run -d -p 80:80 bozahouse-backend:1.0.0
+docker run -d -p 80:5000 booking-backend:1.0.0
 ```
 
 ### run frontend image
 ```bash
-docker run -d -p 80:80 bozahouse-frontend:1.0.0
+docker run -d -p 80:80 booking-frontend:1.0.0
 ```
 
 ### show all container started with status up
@@ -106,16 +106,16 @@ then enter username and password for Docker Hub Repository
 
 * step 2
 ```bash
-docker tag bozahouse-backend:1.0.0 kkmdev/bozahouse:bbv1
+docker tag booking-backend:1.0.0 kkmdev/booking:bbv1
 ```
 * step 3
 ```bash
-docker push kkmdev/bozahouse:bbv1
+docker push kkmdev/booking:bbv1
 ```
 ## = end push image on docker hub 
 
 Platform of application, please visit:
-> [Bozahouse](https://www.bozahouse.com/)
+> [Booking](https://www.booking.com/)
 
 Contact me
 > [maximilien kengne kongne](mailto:maximiliendenver@gmail.com)
