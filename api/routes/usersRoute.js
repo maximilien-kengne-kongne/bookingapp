@@ -32,7 +32,7 @@ const router = express.Router()
  *           schema:
  *             type: object
  *             properties:
- *               name:
+ *               username:
  *                 type: string
  *               address:
  *                 type: string
